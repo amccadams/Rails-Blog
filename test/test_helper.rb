@@ -12,5 +12,6 @@ class ActiveSupport::TestCase
 class ActionDispatch::IntegrationTest
   # Make the Capybara DSL available in all integration tests
   include Capybara::DSL
+  self.use_transactional_fixtures = false
 end
 
